@@ -61,7 +61,7 @@
                 </div>
             </div>
             <p class="original-book-summary">
-                {description}
+                {book_description}
             </p>
         </div>
     </div>

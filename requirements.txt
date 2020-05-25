@@ -1,0 +1,9 @@
+tqdm
+beautifulsoup4
+xmltodict
+pandas
+numpy
+matplotlib
+langdetect
+
+
