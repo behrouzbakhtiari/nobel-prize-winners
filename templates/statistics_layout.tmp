@@ -1,0 +1,66 @@
+<!doctype html>
+<html dir="rtl" lang="fa">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="switch-box">
+                <a href="index.html">&#x2756; صفحه اصلی</a>
+                <a href="statistics.html">&#x2756; کمی آمار</a>
+                <h1> برندگان نوبل ادبیات</h1>
+                <div class="sw">
+                    <div class="switch on"></div>
+                    <label class="switch-label ">حالت روز</label>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="list">
+      <div class="container">
+        <div class="row">
+          {lists}
+        </div>
+      </div>
+    </div>
+    <section class="footer">
+        <div class="download-info">
+            اطلاعات استخراج شده خام هستند و پردازشی بر روی آنها انجام نشده است.
+            <div>
+                از <a href="https://github.com/behrouzbakhtiari/nobel-prize-winners/">اینجا</a> میتوانید سورس را دریافت کنید
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    const SWITCH = document.querySelector(".switch");
+    const BODY = document.querySelector("body");
+    const LABEL = document.querySelector(".switch-label");
+
+    SWITCH.addEventListener("click", function () {
+        if (this.classList.contains("on")) {
+            this.classList.remove("on");
+            BODY.classList.add("dark");
+            LABEL.innerHTML = "حالت شب";
+        } else {
+
+            this.classList.add("on");
+            BODY.classList.remove("dark");
+            LABEL.innerHTML = "حالت روز";
+        }
+    });
+</script>
+
+</html>

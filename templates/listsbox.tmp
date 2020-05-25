@@ -1,0 +1,8 @@
+<div class="col-md-{col_count} col-12">
+    <div class="table-users">
+        <div class="header">{title}</div>
+        <table cellspacing="0">
+            {rows}
+        </table>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="col-md-6">
+  <div class="t-book-box">
+    <div class="row">
+      <div class="col-sm-4">
+        <img class="t-book-pic" src="images/books/{image_name}" alt="{title}" />
+      </div>
+
+      <div class="col-sm-8">
+        <a href="https://www.goodreads.com/book/show/{id}" class="t-book-name">
+          {title}
+        </a>
+        <div class="t-book-info">
+          <div class="t-book-info-row">
+            <span>انتشارات: </span>
+            <strong>{publisher}</strong>
+          </div>
+          <div class="t-book-info-row">
+            <span>سال نشر: </span>
+            <strong>{publication_year}</strong>
+          </div>
+          <div class="t-book-info-row">
+            <span> تعداد نظرات: </span>
+            <strong>{text_reviews_count}</strong>
+          </div>          
+          <div class="t-book-info-row">
+            <span> تعداد امتیاز: </span>
+            <strong>{ratings_count}</strong>
+          </div>
+          <div class="t-book-info-row">
+            <span> مترجم: </span>
+            <strong>{translators_names}</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

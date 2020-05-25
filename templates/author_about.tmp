@@ -1,0 +1,65 @@
+    <section class="detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="detail-avatar">
+                        <div class="in">
+                            <img src="images/authors/{image_name}" alt="{wp_fa_name}">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <h1 class="detail-name">
+                        <a href="https://www.goodreads.com/author/show/{gr_id}">{wp_fa_name}</a>
+                    </h1>
+                    <div class="detail-rating-box">
+                        <div class="rating-holder">
+                            <div class="c-rating" data-rating-value="{star_books_average_rating}">
+                                <button type="button">۱</button>
+                                <button type="button">۲</button>
+                                <button type="button">۳</button>
+                                <button type="button">۴</button>
+                                <button type="button">۵</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-summary">
+                        <div class="detail-info-row">
+                            <span>زادروز: </span>
+                            <strong>{gr_born_at}</strong>
+                        </div>
+                        <div class="detail-info-row">
+                            <span>مرگ: </span>
+                            <strong>{gr_died_at}</strong>
+                        </div>
+                        <div class="detail-info-row">
+                            <span>کشور: </span>
+                            <strong>{wp_fa_countries}</strong>
+                        </div>
+                    </div>
+                    <div class="detail-summary">
+                        <div class="detail-info-row">
+                            <span>زبان: </span>
+                            <strong>{wp_fa_languages}</strong>
+                        </div>
+                        <div class="detail-info-row">
+                            <span>کل خواننده ها: </span>
+                            <strong>{books_total_added_by}</strong>
+                        </div>
+                        <div class="detail-info-row">
+                            <span>تعداد امتیازها: </span>
+                            <strong>{books_total_rating_count}</strong>
+                        </div>
+                    </div>
+
+                    <div class="detail-description">
+                        {ik_about}
+                    </div>
+                </div>
+                <span class="detail-ribbon">
+                    <span class="ribbon"><span>{year}</span></span>
+                </span>
+            </div>
+
+        </div>
+    </section>

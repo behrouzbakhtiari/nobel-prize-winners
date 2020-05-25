@@ -1,0 +1,61 @@
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <article class="card">
+        <div class="card-avatar">
+            <div class="in">
+                <img src="images/authors/{image_name}" alt="{wp_fa_name}">
+            </div>
+        </div>
+        <span class="ribbon"><span>{year}</span></span>
+        <h3 class="card-title">
+            <a href="{author_page}.html">{wp_fa_name}</a>
+        </h3>
+        <div class="card-details">
+            <div class="card-detail-row">
+                <span>زادروز: </span>
+                <strong>{gr_born_at}</strong>
+            </div>
+            <div class="card-detail-row">
+                <span>مرگ: </span>
+                <strong>{gr_died_at}</strong>
+            </div>
+            <div class="card-detail-row">
+                <span>کشور: </span>
+                <strong>{wp_fa_countries}</strong>
+            </div>
+            <div class="card-detail-row">
+                <span>زبان: </span>
+                <strong>{wp_fa_languages}</strong>
+            </div>
+            <div class="card-detail-row">
+                <span>کل خواننده ها: </span>
+                <strong>
+                    {total_added_by}
+                </strong>
+            </div>
+            <div class="card-detail-row">
+                <span> تعداد امتیازها: </span>
+                <strong>
+                    {total_rating_count}
+                </strong>
+            </div>
+            <div class="card-detail-row">
+                <span>میانگین امتیاز: {total_average_rating}</span>
+                <strong>
+                    <div class="rating-holder">
+                        <div class="c-rating" data-rating-value="{star_total_average_rating}">
+                            
+                            <button type="button">۱</button>
+                            <button type="button">۲</button>
+                            <button type="button">۳</button>
+                            <button type="button">۴</button>
+                            <button type="button">۵</button>
+                        </div>
+                    </div>
+                </strong>
+            </div>
+        </div>
+        <div class="awards">
+            {genres}
+        </div>
+    </article>
+</div>

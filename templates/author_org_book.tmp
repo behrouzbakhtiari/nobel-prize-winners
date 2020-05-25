@@ -1,0 +1,81 @@
+<div class="original-box">
+    <div class="row">
+        <div class="col-md-3">
+            <img class="original-book-pic"
+            src="images/books/{org_image_name}" />
+        </div>
+        <div class="col-md-9">
+            <div class="original-book-name">
+                <a href="https://www.goodreads.com/book/show/{org_id}" class="t-book-name">
+                {org_title}
+                </a>
+            </div>
+            <div class="original-book-info">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="original-book-info-row">
+                            <span>انتشارات: </span>
+                            <strong>{org_publisher}</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="original-book-info-row">
+                            <span>سال نشر: </span>
+                            <strong>{original_publication_year}</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="original-book-info-row">
+                            <span>کل تعداد خوانندگان: </span>
+                            <strong>{total_added_by}</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="original-book-info-row">
+                            <span> تعداد نظرات: </span>
+                            <strong>{total_text_reviews_count}</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="original-book-info-row">
+                            <span> تعداد امتیازها: </span>
+                            <strong>{total_rating_count}</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="original-book-info-row">
+                            <span>میانگین امتیازها: {average_rating}</span>
+                            <strong>
+                                
+                                <div class="c-rating" data-rating-value="{star_average_rating}">
+                                    <button type="button">۱</button>
+                                    <button type="button">۲</button>
+                                    <button type="button">۳</button>
+                                    <button type="button">۴</button>
+                                    <button type="button">۵</button>
+                                </div>
+                            </strong>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <p class="original-book-summary">
+                {description}
+            </p>
+        </div>
+    </div>
+    <div class="chart">
+        <dl>
+            <dd class="percentage percentage-{score_5_pct}"><span class="text">۵</span><strong>{score_5}</strong></dd>
+            <dd class="percentage percentage-{score_4_pct}"><span class="text">۴</span><strong>{score_4}</strong></dd>
+            <dd class="percentage percentage-{score_3_pct}"><span class="text">۳</span><strong>{score_3}</strong></dd>
+            <dd class="percentage percentage-{score_2_pct}"><span class="text">۲</span><strong>{score_2}</strong></dd>
+            <dd class="percentage percentage-{score_1_pct}"><span class="text">۱</span><strong>{score_1}</strong></dd>
+        </dl>
+    </div>
+    <div class="row">
+        {persian_books}
+    </div>
+</div>
+
